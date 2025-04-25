@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "487800911414",
+    "project_id": "eduease-group6",
+    "storage_bucket": "eduease-group6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487800911414:android:f5ffca90ee6f7e79cf4a97",
+        "android_client_info": {
+          "package_name": "com.example.eduease"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMJRapZt491P3kEsb6yEgDpzd8S6g6y0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "882141634417",
+    "firebase_url": "https://edu-ease-ni-ayan-default-rtdb.firebaseio.com",
+    "project_id": "edu-ease-ni-ayan",
+    "storage_bucket": "edu-ease-ni-ayan.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882141634417:android:ac69b51d83d01def3460d0",
+        "android_client_info": {
+          "package_name": "com.example.eduease"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlECTZf28SbEc4xHsz7JnH99YtTw6T58I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

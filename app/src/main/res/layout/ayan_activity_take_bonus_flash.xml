@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/identification_bg"
+    tools:context=".TakeBonusFlash">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Logo Image -->
+        <ImageView
+            android:layout_width="256dp"
+            android:layout_height="86dp"
+            android:layout_margin="16dp"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home_logo" />
+
+        <!-- Quiz Title -->
+        <TextView
+            android:id="@+id/quiz_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="16dp"
+            android:text="Quiz Title"
+            android:textSize="32sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <!-- Quiz Description -->
+        <TextView
+            android:id="@+id/quiz_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Quiz Description"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <!-- Bonus Points Display -->
+        <TextView
+            android:id="@+id/total_bonus_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="16dp"
+            android:text="Total Bonus Points: 0"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <!-- ScrollView to hold Bonus Points and Questions -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridLayout
+                android:id="@+id/bonus_points_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+            </GridLayout>
+        </ScrollView>
+
+        <!-- QA Container for the quiz questions -->
+        <LinearLayout
+            android:id="@+id/qa_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- This will hold your quiz questions dynamically -->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

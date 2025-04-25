@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">EduEase</string>
+
+    <string name="logo_image">EduEase Logo</string>
+    <string name="divider_or_image">or</string>
+
+    <string name="default_web_client_id">487800911414-kieouu8fq7hm6j0tsvhasj4kafslnodl.apps.googleusercontent.com</string>
+
+    <!-- Get Started -->
+    <string name="getstarted_tagline">Study, Learn, Review!</string>
+    <string name="getstarted_btn">Get Started</string>
+
+    <!-- Create Account -->
+    <string name="create_account_image">Create Account Image</string>
+    <string name="CreateAccount_Email">Email</string>
+    <string name="CreateAccount_Password">Password</string>
+    <string name="CreateAccount_ReType_Password">Re-Type Password</string>
+    <string name="CreateAccount_SignUp_btn">Sign Up</string>
+    <string name="google_sign_in_image_btn">Google Sign in Button</string>
+    <string name="CreateAccount_Question">Already have an Account?</string>
+    <string name="CreateAccount_LOGIN_txt_btn">LOG IN</string>
+
+    <!-- Login -->
+    <string name="login_image">Login Image</string>
+    <string name="Login_Email">Email</string>
+    <string name="Login_Password">Password</string>
+    <string name="Login_btn">Login</string>
+    <string name="google_login_image_btn">Google Login button</string>
+    <string name="Login_Question">Don\'t have an Account?</string>
+    <string name="Login_SIGNUP_txt_btn">SIGN UP</string>
+
+    <!-- Login -->
+    <string name="settings_profile_image">Profile Image</string>
+
+</resources>

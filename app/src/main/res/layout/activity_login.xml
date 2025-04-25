@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="16dp"
+        android:paddingStart="22dp"
+        android:src="@drawable/eduease_logo"
+        android:contentDescription="@string/logo_image"
+        tools:ignore="RtlSymmetry" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/login_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:id="@+id/login_form_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <ImageView
+                android:id="@+id/login_banner"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:scaleX="4"
+                android:scaleY="4"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/login_image"
+                android:src="@drawable/login" />
+
+            <EditText
+                android:id="@+id/email_input"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginVertical="8dp"
+                android:background="@drawable/textbox"
+                android:drawableStart="@drawable/person"
+                android:drawablePadding="8dp"
+                android:inputType="textEmailAddress"
+                android:paddingStart="8dp"
+                android:hint="@string/Login_Email"
+                android:importantForAutofill="no"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_gray"
+                android:textSize="12sp"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/password_input"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/textbox"
+                android:drawableStart="@drawable/lock"
+                android:drawableEnd="@drawable/hide_password"
+                android:drawablePadding="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:hint="@string/CreateAccount_Password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_gray"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/bubblegum_pink"
+                android:fontFamily="@font/jomolhari"
+                android:text="@string/Login_btn"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/separator_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/or"
+                android:contentDescription="@string/divider_or_image" />
+
+            <ImageButton
+                android:id="@+id/google_login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/login_with_google"
+                android:contentDescription="@string/google_login_image_btn" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/signup_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/doa_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/Login_Question"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/signup_text_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/Login_SIGNUP_txt_btn"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground" />
+    </LinearLayout>
+
+</LinearLayout>
